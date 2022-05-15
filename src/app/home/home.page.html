@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Acccueil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="back">
+  <ion-card>
+<ion-img src="assets/ESSAT.png" class="image"></ion-img>
+  </ion-card>
+
+   <ion-item class="item">
+    <ion-label position="floating" >Email</ion-label>
+    <ion-input type="text"[(ngModel)]="email"></ion-input>
+   </ion-item>
+   <ion-item class="item">
+    <ion-label position="floating" >Password</ion-label>
+    <ion-input type="password" [(ngModel)]="pass"></ion-input>
+   </ion-item>
+   <ion-button color="primary" (click)="connect();MaToast();" expand="block">Se connecter</ion-button>
+
+</ion-content>

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>groupes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="back">
+  <ion-list class="item">
+ 
+      <ion-button expand="full" color="light" *ngFor="let grp of group" (click)="lien(grp);">
+       <ion-label><b>{{grp.nom}}</b> </ion-label>
+      </ion-button>
+
+   
+  </ion-list>
+
+</ion-content>
